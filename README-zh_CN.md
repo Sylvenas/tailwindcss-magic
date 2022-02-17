@@ -49,7 +49,7 @@ module.exports = {
 
 ### 自定义 animation property
 
-默认 `animation-duration:1s`,可借助 **tailwindcss-animation** 插件修改其他的动画属性: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`。 [查看详情](TODO)
+默认 `animation-duration:1s`,可借助 [tailwindcss-animation](TODO) 插件修改其他的动画属性: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`。
 
 ## 动画名称
 
