@@ -360,6 +360,8 @@ class App extends Component {
             magic-openDownLeft magic-openDownLeftReturn magic-openDownRight magic-openDownRightReturn
             magic-openUpLeft magic-openUpLeftReturn magic-openUpRight magic-openUpRightReturn
 
+            magic-openDownLeftOut magic-openDownRightOut magic-openUpLeftOut magic-openUpRightOut
+
             magic-perspectiveDown magic-perspectiveDownReturn magic-perspectiveLeft magic-perspectiveLeftReturn
             magic-perspectiveRight magic-perspectiveRightReturn magic-perspectiveUp magic-perspectiveUpReturn
 

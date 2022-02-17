@@ -2,13 +2,19 @@
 
 English | [简体中文](./README-zh_CN.md)
 
-A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins). [check the DEMO](https://stackblitz.com/edit/nextjs-ktaxda?file=data%2Findex.js)
+A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins).
 
 > Most of the animation effects are based on [magic](https://github.com/miniMAC/magic).
 
 <div style="text-align:center" align="center">
   <img src="https://p1.music.126.net/T4JA1NmZlSTZZZK4EgBncA==/109951164699178486.gif" />
 </div>
+
+## Preview
+
+Preview the example live on CodeSandbox:
+
+[Open in CodeSandbox](https://codesandbox.io/s/fancy-glade-3197y8?file=/pages/index.js)
 
 ## Usage
 
@@ -53,7 +59,7 @@ module.exports = {
 
 The default animation property setting is `animation-duration:1s`.
 
-You can use the [tailwindcss-animation](TODO) plugin to modify the other animation properties: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`。
+You can use the [tailwindcss-animation](TODO) plugin to modify the other animation properties: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`.
 
 ## Animation
 
