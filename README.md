@@ -2,7 +2,7 @@
 
 English | [简体中文](./README-zh_CN.md)
 
-A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins). [check the DEMO](https://stackblitz.com/edit/nextjs-ktaxda?file=pages%2Findex.js)
+A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins). [check the DEMO](https://stackblitz.com/edit/nextjs-ktaxda?file=data%2Findex.js)
 
 > Most of the animation effects are based on [magic](https://github.com/miniMAC/magic).
 

@@ -2,7 +2,7 @@
 
 [English](./README.md) | 简体中文
 
-一组适用于 [tailwindcss](https://tailwindcss.com/) 的神奇动画库,使用 [tailwindcss plugin](https://tailwindcss.com/docs/plugins) 的方式接入。[查看 DEMO]()
+一组适用于 [tailwindcss](https://tailwindcss.com/) 的神奇动画库,使用 [tailwindcss plugin](https://tailwindcss.com/docs/plugins) 的方式接入。[查看 DEMO](https://stackblitz.com/edit/nextjs-ktaxda?file=data%2Findex.js)
 
 > 大部分动画效果基于 [magic](https://github.com/miniMAC/magic) 实现。
 
