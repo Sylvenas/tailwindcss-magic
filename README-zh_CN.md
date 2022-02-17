@@ -2,9 +2,7 @@
 
 [English](./README.md) | 简体中文
 
-一组适用于[tailwindcss](https://tailwindcss.com/)的神奇动画库,使用[tailwindcss plugin](https://tailwindcss.com/docs/plugins)的方式接入。
-
-[查看 DEMO]()
+一组适用于 [tailwindcss](https://tailwindcss.com/) 的神奇动画库,使用 [tailwindcss plugin](https://tailwindcss.com/docs/plugins) 的方式接入。[查看 DEMO]()
 
 > 大部分动画效果基于 [magic](https://github.com/miniMAC/magic) 实现。
 
@@ -49,13 +47,13 @@ module.exports = {
 </div>
 ```
 
-### Animation property
+### 自定义 animation property
 
-默认 `animation-duration:1s`,可借助 tailwindcss-animation 插件修改其他的动画属性。 `animation-duration`, ·animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`,[查看详情](TODO)
+默认 `animation-duration:1s`,可借助 **tailwindcss-animation** 插件修改其他的动画属性: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`。 [查看详情](TODO)
 
 ## 动画名称
 
-所有的动画名称均以 magic 开头，然后下划线之后是“真正的”动画名称(magic-puffIn,magic-openDownLeft...)，全部的动画名称列表如下：
+所有的动画名称均以 `magic` 开头，然后下划线之后是“真正的”动画名称(`magic-puffIn`, `magic-openDownLeft`...)，全部的动画名称列表如下：
 
 ```
 .
@@ -160,7 +158,7 @@ npm run test
 
 ## TODO
 
-- 添加正则表达式校验输入合法
+- 添加线上 DEMO
 
 ## License
 

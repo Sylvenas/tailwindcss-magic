@@ -29,17 +29,15 @@
         "tailwindcss": "^3.0.22"
     },
     "keywords": [
-        "color",
-        "convert",
-        "transfer",
-        "hex",
-        "rgb",
-        "hsl"
+        "magic",
+        "tailwindcss",
+        "animation",
+        "plugin"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/lit-forest/color-transfer.git"
+        "url": "https://github.com/Sylvenas/tailwindcss-magic"
     },
-    "author": "",
-    "license": "ISC"
+    "author": "sylvenas@outlook.com",
+    "license": "MIT"
 }
