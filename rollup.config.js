@@ -11,15 +11,15 @@ const plugins = [
 ];
 
 export default [
-  {
-    input,
-    output: {
-      file: pkg.module,
-      format: "esm",
-      sourcemap: true,
-    },
-    plugins,
-  },
+  // {
+  //   input,
+  //   output: {
+  //     file: pkg.module,
+  //     format: "esm",
+  //     sourcemap: true,
+  //   },
+  //   plugins,
+  // },
   {
     input,
     output: {

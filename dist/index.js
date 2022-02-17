@@ -66,38 +66,14 @@ var range = function (a, b, c) {
     var arr = new Array(len).fill(0);
     return arr.map(function (_, k) { return (k * (c !== null && c !== void 0 ? c : (a < 0 ? -1 : 1)) || 0) + (b != null ? a : 0); });
 };
-var duration = expandArray([75, 100, 150, 200, 300, 500, 700, 1000], "ms");
+var duration = expandArray([100, 200, 300, 500, 1000], "ms");
 var delay = __assign({}, duration);
-var repeat = expandArray(range(13));
+var repeat = expandArray(range(5));
 var ease = {
     linear: "0,0,1,1",
     "in": ".42,0,1,1",
     out: "0,0,.58,1",
     "in-out": ".42,0,.58,1",
-    "in-sine": ".12,0,.39,0",
-    "out-sine": ".61,1,.88,1",
-    "in-out-sine": ".37,0,.63,1",
-    "in-quad": ".11,0,.5,0",
-    "out-quad": ".5,1,.89,1",
-    "in-out-quad": ".45,0,.55,1",
-    "in-cubic": ".32,0,.67,0",
-    "out-cubic": ".33,1,.68,1",
-    "in-out-cubic": ".65,0,.35,1",
-    "in-quart": ".5,0,.75,0",
-    "out-quart": ".25,1,.5,1",
-    "in-out-quart": ".76,0,.24,1",
-    "in-quint": ".64,0,.78,0",
-    "out-quint": ".22,1,.36,1",
-    "in-out-quint": ".83,0,.17,1",
-    "in-expo": ".7,0,.84,0",
-    "out-expo": ".16,1,.3,1",
-    "in-out-expo": ".87,0,.13,1",
-    "in-circ": ".55,0,1,.45",
-    "out-circ": "0,.55,.45,1",
-    "in-out-circ": ".85,0,.15,1",
-    "in-back": ".36,0,.66,-.56",
-    "out-back": ".34,1.56,.64,1",
-    "in-out-back": ".68,-.6,.32,1.6",
 };
 var fill = expandArray(["none", "forwards", "backwards", "both"]);
 
@@ -1190,9 +1166,9 @@ var spaceOutUp = {
 
 function addAnimationJIT(matchUtilities) {
     matchUtilities({ "animate-delay": function (value) { return ({ animationDelay: value }); } }, { values: delay });
-    matchUtilities({ "animate-repeat": function (value) { return ({ animationIterationCount: value }); } }, { values: repeat });
+    matchUtilities({ "animate-iteration": function (value) { return ({ animationIterationCount: value }); } }, { values: repeat });
     matchUtilities({
-        "animate-ease": function (value) { return ({
+        "animate-time": function (value) { return ({
             animationTimingFunction: "cubic-bezier(" + value + ")",
         }); },
     }, { values: ease });
@@ -1296,289 +1272,288 @@ var magicAnimation = createPlugin(function (_a) {
         "@keyframes spaceOutUp": spaceOutUp,
     };
     var fallbackUtilities = {
-        ".magic_magic": {
+        ".magic-magic": {
             animationName: "magic",
             animationDuration: "1s",
         },
-        ".magic_swap": {
+        ".magic-swap": {
             animationName: "swap",
             animationDuration: "1s",
         },
-        ".magic_twisterInUp": {
+        ".magic-twisterInUp": {
             animationName: "twisterInUp",
             animationDuration: "1s",
         },
-        ".magic_twisterInDown": {
+        ".magic-twisterInDown": {
             animationName: "twisterInDown",
             animationDuration: "1s",
         },
-        ".magic_puffIn": {
+        ".magic-puffIn": {
             animationName: "puffIn",
             animationDuration: "1s",
         },
-        ".magic_puffOut": {
+        ".magic-puffOut": {
             animationName: "puffOut",
             animationDuration: "1s",
         },
-        ".magic_vanishIn": {
+        ".magic-vanishIn": {
             animationName: "vanishIn",
             animationDuration: "1s",
         },
-        ".magic_vanishOut": {
+        ".magic-vanishOut": {
             animationName: "vanishOut",
             animationDuration: "1s",
         },
-        ".magic_openDownLeft": {
+        ".magic-openDownLeft": {
             animationName: "openDownLeft",
             animationDuration: "1s",
         },
-        ".magic_openDownLeftReturn": {
+        ".magic-openDownLeftReturn": {
             animationName: "openDownLeftReturn",
             animationDuration: "1s",
         },
-        ".magic_openDownRight": {
+        ".magic-openDownRight": {
             animationName: "openDownRight",
             animationDuration: "1s",
         },
-        ".magic_openDownRightReturn": {
+        ".magic-openDownRightReturn": {
             animationName: "openDownRightReturn",
             animationDuration: "1s",
         },
-        ".magic_openUpLeft": {
+        ".magic-openUpLeft": {
             animationName: "openUpLeft",
             animationDuration: "1s",
         },
-        ".magic_openUpLeftReturn": {
+        ".magic-openUpLeftReturn": {
             animationName: "openUpLeftReturn",
             animationDuration: "1s",
         },
-        ".magic_openUpRight": {
+        ".magic-openUpRight": {
             animationName: "openUpRight",
             animationDuration: "1s",
         },
-        ".magic_openUpRightReturn": {
+        ".magic-openUpRightReturn": {
             animationName: "openUpRightReturn",
             animationDuration: "1s",
         },
-        ".magic_openDownLeftOut": {
+        ".magic-openDownLeftOut": {
             animationName: "openDownLeftOut",
             animationDuration: "1s",
         },
-        ".magic_openDownRightOut": {
+        ".magic-openDownRightOut": {
             animationName: "openDownRightOut",
             animationDuration: "1s",
         },
-        ".magic_openUpLeftOut": {
+        ".magic-openUpLeftOut": {
             animationName: "openUpLeftOut",
             animationDuration: "1s",
         },
-        ".magic_openUpRightOut": {
+        ".magic-openUpRightOut": {
             animationName: "openUpRightOut",
             animationDuration: "1s",
         },
-        ".magic_perspectiveDown": {
+        ".magic-perspectiveDown": {
             animationName: "perspectiveDown",
             animationDuration: "1s",
         },
-        ".magic_perspectiveDownReturn": {
+        ".magic-perspectiveDownReturn": {
             animationName: "perspectiveDownReturn",
             animationDuration: "1s",
         },
-        ".magic_perspectiveLeft": {
+        ".magic-perspectiveLeft": {
             animationName: "perspectiveLeft",
             animationDuration: "1s",
         },
-        ".magic_perspectiveLeftReturn": {
+        ".magic-perspectiveLeftReturn": {
             animationName: "perspectiveLeftReturn",
             animationDuration: "1s",
         },
-        ".magic_perspectiveRight": {
+        ".magic-perspectiveRight": {
             animationName: "perspectiveRight",
             animationDuration: "1s",
         },
-        ".magic_perspectiveRightReturn": {
+        ".magic-perspectiveRightReturn": {
             animationName: "perspectiveRightReturn",
             animationDuration: "1s",
         },
-        ".magic_perspectiveUp": {
+        ".magic-perspectiveUp": {
             animationName: "perspectiveUp",
             animationDuration: "1s",
         },
-        ".magic_perspectiveUpReturn": {
+        ".magic-perspectiveUpReturn": {
             animationName: "perspectiveUpReturn",
             animationDuration: "1s",
         },
-        ".magic_rotateDownIn": {
+        ".magic-rotateDownIn": {
             animationName: "rotateDownIn",
             animationDuration: "1s",
         },
-        ".magic_rotateDownOut": {
+        ".magic-rotateDownOut": {
             animationName: "rotateDownOut",
             animationDuration: "1s",
         },
-        ".magic_rotateLeftIn": {
+        ".magic-rotateLeftIn": {
             animationName: "rotateLeftIn",
             animationDuration: "1s",
         },
-        ".magic_rotateLeftOut": {
+        ".magic-rotateLeftOut": {
             animationName: "rotateLeftOut",
             animationDuration: "1s",
         },
-        ".magic_rotateRightIn": {
+        ".magic-rotateRightIn": {
             animationName: "rotateRightIn",
             animationDuration: "1s",
         },
-        ".magic_rotateRightOut": {
+        ".magic-rotateRightOut": {
             animationName: "rotateRightOut",
             animationDuration: "1s",
         },
-        ".magic_rotateUpIn": {
+        ".magic-rotateUpIn": {
             animationName: "rotateUpIn",
             animationDuration: "1s",
         },
-        ".magic_rotateUpOut": {
+        ".magic-rotateUpOut": {
             animationName: "rotateUpOut",
             animationDuration: "1s",
         },
-        ".magic_slideDown": {
+        ".magic-slideDown": {
             animationName: "slideDown",
             animationDuration: "1s",
         },
-        ".magic_slideDownReturn": {
+        ".magic-slideDownReturn": {
             animationName: "slideDownReturn",
             animationDuration: "1s",
         },
-        ".magic_slideLeft": {
+        ".magic-slideLeft": {
             animationName: "slideLeft",
             animationDuration: "1s",
         },
-        ".magic_slideLeftReturn": {
+        ".magic-slideLeftReturn": {
             animationName: "slideLeftReturn",
             animationDuration: "1s",
         },
-        ".magic_slideRight": {
+        ".magic-slideRight": {
             animationName: "slideRight",
             animationDuration: "1s",
         },
-        ".magic_slideRightReturn": {
+        ".magic-slideRightReturn": {
             animationName: "slideRightReturn",
             animationDuration: "1s",
         },
-        ".magic_slideUp": {
+        ".magic-slideUp": {
             animationName: "slideUp",
             animationDuration: "1s",
         },
-        ".magic_slideUpReturn": {
+        ".magic-slideUpReturn": {
             animationName: "slideUpReturn",
             animationDuration: "1s",
         },
-        ".magic_foolishIn": {
+        ".magic-foolishIn": {
             animationName: "foolishIn",
             animationDuration: "1s",
         },
-        ".magic_foolishOut": {
+        ".magic-foolishOut": {
             animationName: "foolishOut",
             animationDuration: "1s",
         },
-        ".magic_holeIn": {
+        ".magic-holeIn": {
             animationName: "holeIn",
             animationDuration: "1s",
         },
-        ".magic_holeOut": {
+        ".magic-holeOut": {
             animationName: "holeOut",
             animationDuration: "1s",
         },
-        ".magic_swashIn": {
+        ".magic-swashIn": {
             animationName: "swashIn",
             animationDuration: "1s",
         },
-        ".magic_swashOut": {
+        ".magic-swashOut": {
             animationName: "swashOut",
             animationDuration: "1s",
         },
-        ".magic_tinDownIn": {
+        ".magic-tinDownIn": {
             animationName: "tinDownIn",
             animationDuration: "1s",
         },
-        ".magic_tinDownOut": {
+        ".magic-tinDownOut": {
             animationName: "tinDownOut",
             animationDuration: "1s",
         },
-        ".magic_tinLeftIn": {
+        ".magic-tinLeftIn": {
             animationName: "tinLeftIn",
             animationDuration: "1s",
         },
-        ".magic_tinLeftOut": {
+        ".magic-tinLeftOut": {
             animationName: "tinLeftOut",
             animationDuration: "1s",
         },
-        ".magic_tinRightIn": {
+        ".magic-tinRightIn": {
             animationName: "tinRightIn",
             animationDuration: "1s",
         },
-        ".magic_tinRightOut": {
+        ".magic-tinRightOut": {
             animationName: "tinRightOut",
             animationDuration: "1s",
         },
-        ".magic_tinUpIn": {
+        ".magic-tinUpIn": {
             animationName: "tinUpIn",
             animationDuration: "1s",
         },
-        ".magic_tinUpOut": {
+        ".magic-tinUpOut": {
             animationName: "tinUpOut",
             animationDuration: "1s",
         },
-        ".magic_bombLeftOut": {
+        ".magic-bombLeftOut": {
             animationName: "bombLeftOut",
             animationDuration: "1s",
         },
-        ".magic_bombRightOut": {
+        ".magic-bombRightOut": {
             animationName: "bombRightOut",
             animationDuration: "1s",
         },
-        ".magic_boingInUp": {
+        ".magic-boingInUp": {
             animationName: "boingInUp",
             animationDuration: "1s",
         },
-        ".magic_boingOutDown": {
+        ".magic-boingOutDown": {
             animationName: "boingOutDown",
             animationDuration: "1s",
         },
-        ".magic_spaceInDown": {
+        ".magic-spaceInDown": {
             animationName: "spaceInDown",
             animationDuration: "1s",
         },
-        ".magic_spaceInLeft": {
+        ".magic-spaceInLeft": {
             animationName: "spaceInLeft",
             animationDuration: "1s",
         },
-        ".magic_spaceInRight": {
+        ".magic-spaceInRight": {
             animationName: "spaceInRight",
             animationDuration: "1s",
         },
-        ".magic_spaceInUp": {
+        ".magic-spaceInUp": {
             animationName: "spaceInUp",
             animationDuration: "1s",
         },
-        ".magic_spaceOutDown": {
+        ".magic-spaceOutDown": {
             animationName: "spaceOutDown",
             animationDuration: "1s",
         },
-        ".magic_spaceOutLeft": {
+        ".magic-spaceOutLeft": {
             animationName: "spaceOutLeft",
             animationDuration: "1s",
         },
-        ".magic_spaceOutRight": {
+        ".magic-spaceOutRight": {
             animationName: "spaceOutRight",
             animationDuration: "1s",
         },
-        ".magic_spaceOutUp": {
+        ".magic-spaceOutUp": {
             animationName: "spaceOutUp",
             animationDuration: "1s",
         },
     };
     addUtilities(fallbackKeyframes, {
-        // variants: ["hover"],
         respectImportant: false,
     });
     addUtilities(fallbackUtilities, {

@@ -146,7 +146,7 @@ class App extends Component {
     var cssName = e.target.innerText;
     this.setState({
       isPlaying: true,
-      magicClass: "magic_" + cssName,
+      magicClass: "magic-" + cssName,
     });
     setTimeout(() => {
       this.setState({
@@ -353,33 +353,33 @@ class App extends Component {
         <div
           className={`
             hidden
-            magic_magic magic_swap magic_twisterInUp magic_twisterInDown
+            magic-magic magic-swap magic-twisterInUp magic-twisterInDown
 
-            magic_puffIn magic_puffOut magic_vanishIn magic_vanishOut
+            magic-puffIn magic-puffOut magic-vanishIn magic-vanishOut
 
-            magic_openDownLeft magic_openDownLeftReturn magic_openDownRight magic_openDownRightReturn
-            magic_openUpLeft magic_openUpLeftReturn magic_openUpRight magic_openUpRightReturn
+            magic-openDownLeft magic-openDownLeftReturn magic-openDownRight magic-openDownRightReturn
+            magic-openUpLeft magic-openUpLeftReturn magic-openUpRight magic-openUpRightReturn
 
-            magic_perspectiveDown magic_perspectiveDownReturn magic_perspectiveLeft magic_perspectiveLeftReturn
-            magic_perspectiveRight magic_perspectiveRightReturn magic_perspectiveUp magic_perspectiveUpReturn
+            magic-perspectiveDown magic-perspectiveDownReturn magic-perspectiveLeft magic-perspectiveLeftReturn
+            magic-perspectiveRight magic-perspectiveRightReturn magic-perspectiveUp magic-perspectiveUpReturn
 
-            magic_rotateDownIn magic_rotateDownOut magic_rotateLeftIn magic_rotateLeftOut
-            magic_rotateRightIn magic_rotateRightOut magic_rotateUpIn magic_rotateUpOut
+            magic-rotateDownIn magic-rotateDownOut magic-rotateLeftIn magic-rotateLeftOut
+            magic-rotateRightIn magic-rotateRightOut magic-rotateUpIn magic-rotateUpOut
 
-            magic_slideDown magic_slideDownReturn magic_slideLeft magic_slideLeftReturn
-            magic_slideRight magic_slideRightReturn magic_slideUp magic_slideUpReturn
+            magic-slideDown magic-slideDownReturn magic-slideLeft magic-slideLeftReturn
+            magic-slideRight magic-slideRightReturn magic-slideUp magic-slideUpReturn
 
-            magic_foolishIn magic_foolishOut magic_holeIn
-            magic_holeOut magic_swashIn magic_swashOut
+            magic-foolishIn magic-foolishOut magic-holeIn
+            magic-holeOut magic-swashIn magic-swashOut
 
-            magic_tinDownIn magic_tinDownOut magic_tinLeftIn magic_tinLeftOut
-            magic_tinRightIn magic_tinRightOut magic_tinUpIn magic_tinUpOut
+            magic-tinDownIn magic-tinDownOut magic-tinLeftIn magic-tinLeftOut
+            magic-tinRightIn magic-tinRightOut magic-tinUpIn magic-tinUpOut
 
-            magic_bombLeftOut magic_bombRightOut 
-            magic_boingInUp magic_boingOutDown
+            magic-bombLeftOut magic-bombRightOut 
+            magic-boingInUp magic-boingOutDown
 
-            magic_spaceInDown magic_spaceInLeft magic_spaceInRight magic_spaceInUp
-            magic_spaceOutDown magic_spaceOutLeft magic_spaceOutRight magic_spaceOutUp
+            magic-spaceInDown magic-spaceInLeft magic-spaceInRight magic-spaceInUp
+            magic-spaceOutDown magic-spaceOutLeft magic-spaceOutRight magic-spaceOutUp
         `}
         ></div>
       </div>
