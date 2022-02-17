@@ -1,0 +1,45 @@
+{
+    "name": "tailwindcss-magic",
+    "version": "0.0.1",
+    "description": "Amazing tailwindcss animation plugins",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "jest --coverage",
+        "build": "npx rollup -c"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.16",
+        "jest": "^26.6.3",
+        "rollup": "^2.34.2",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript2": "^0.29.0",
+        "ts-jest": "^26.4.4"
+    },
+    "dependencies": {
+        "typescript": "^4.1.2"
+    },
+    "peerDependencies": {
+        "tailwindcss": "^3.0.22"
+    },
+    "keywords": [
+        "color",
+        "convert",
+        "transfer",
+        "hex",
+        "rgb",
+        "hsl"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lit-forest/color-transfer.git"
+    },
+    "author": "",
+    "license": "ISC"
+}

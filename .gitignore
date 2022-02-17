@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.project
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# node
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+
+/example/node_modules
+
+# vim
+*.swp
+
+# webstorm
+.idea
+
+# vscode
+.vscode
+jsconfig.json
+
+# macos
+.DS_Store
+
+# elint
+/.commitlintrc.js
+/.eslintrc.js
+/.huskyrc.js
+/.stylelintrc.js
+
+# production
+/public
+
+# coverage
+/coverage
