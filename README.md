@@ -4,7 +4,7 @@ English | [简体中文](./README-zh_CN.md)
 
 A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins).
 
-> Most of the animation effects are based on [magic](https://github.com/miniMAC/magic).
+> How to customize the animation properties？ Try [tailwindcss-animation-property](https://www.npmjs.com/package/tailwindcss-animation-property).
 
 <div style="text-align:center" align="center">
   <img src="https://p1.music.126.net/T4JA1NmZlSTZZZK4EgBncA==/109951164699178486.gif" />
@@ -175,3 +175,5 @@ npm run test
 ## License
 
 [MIT](./LICENSE)
+
+> Most of the animation effects are based on [magic](https://github.com/miniMAC/magic).
