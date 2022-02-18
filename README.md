@@ -6,7 +6,7 @@ A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/)
 
 Preview the example live on CodeSandbox: [Open in CodeSandbox](https://codesandbox.io/s/fancy-glade-3197y8?file=/pages/index.js)
 
-> How to customize the animation properties？ Try [tailwindcss-animation-property](https://www.npmjs.com/package/tailwindcss-animation-property).
+> How to customize the animation properties？ Try [tailwindcss-animation-property](https://github.com/Sylvenas/tailwindcss-animation-property).
 
 <div style="text-align:center" align="center">
   <img src="https://p1.music.126.net/T4JA1NmZlSTZZZK4EgBncA==/109951164699178486.gif" />
@@ -55,7 +55,7 @@ module.exports = {
 
 The default animation property setting is `animation-duration:1s`.
 
-You can use the [tailwindcss-animation](TODO) plugin to modify the other animation properties: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`.
+You can use the [tailwindcss-animation-property](https://github.com/Sylvenas/tailwindcss-animation-property) to modify the other animation properties: `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`.
 
 ## Animation
 
