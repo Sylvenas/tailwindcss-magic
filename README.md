@@ -4,17 +4,13 @@ English | [简体中文](./README-zh_CN.md)
 
 A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins).
 
+Preview the example live on CodeSandbox: [Open in CodeSandbox](https://codesandbox.io/s/fancy-glade-3197y8?file=/pages/index.js)
+
 > How to customize the animation properties？ Try [tailwindcss-animation-property](https://www.npmjs.com/package/tailwindcss-animation-property).
 
 <div style="text-align:center" align="center">
   <img src="https://p1.music.126.net/T4JA1NmZlSTZZZK4EgBncA==/109951164699178486.gif" />
 </div>
-
-## Preview
-
-Preview the example live on CodeSandbox:
-
-[Open in CodeSandbox](https://codesandbox.io/s/fancy-glade-3197y8?file=/pages/index.js)
 
 ## Usage
 

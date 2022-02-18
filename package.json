@@ -1,7 +1,7 @@
 {
     "name": "tailwindcss-magic",
     "version": "0.0.5",
-    "description": "Amazing tailwindcss animation plugins",
+    "description": "A set of magical animation libraries for tailwindcss, accessed using the tailwindcss plugin.",
     "main": "dist/index.js",
     "files": [
         "dist"
