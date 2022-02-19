@@ -37,10 +37,24 @@ module.exports = {
 
 > After the code has been wrapped by tailwindcss, only the animations which are already used will be included in the final code, so be relax ...
 
-### Used in HTML
+### Used in HTML element
 
 ```html
 <div className="magic-magic"></div>
+```
+
+### Used with @apply
+
+```css
+@layer components {
+  .animation-magic-repert-2 {
+    @apply magic-magic animate-iteration-2;
+  }
+}
+```
+
+```html
+<div className="animation-magic-repert-2"></div>
 ```
 
 ### Used in states such as Hover, Focus, etc.
@@ -148,6 +162,11 @@ The full list of animation titles is as follows：
 │   |── spaceOutRight
 │   └── spaceOutUp
 ```
+
+### Q & A
+
+- How do I remember so many animation names?  
+  Tailwinds-magic and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, so take it easy!
 
 ### develop & test
 
