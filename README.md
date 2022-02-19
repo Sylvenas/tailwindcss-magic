@@ -47,14 +47,14 @@ module.exports = {
 
 ```css
 @layer components {
-  .animation-magic-repert-2 {
+  .animation-magic-repeat-2 {
     @apply magic-magic animate-iteration-2;
   }
 }
 ```
 
 ```html
-<div className="animation-magic-repert-2"></div>
+<div className="animation-magic-repeat-2"></div>
 ```
 
 ### Used in states such as Hover, Focus, etc.
