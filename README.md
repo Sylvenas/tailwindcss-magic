@@ -9,7 +9,7 @@ Preview the example live on CodeSandbox: [Open in CodeSandbox](https://codesandb
 > How to customize the animation properties？ Try [tailwindcss-animation-property](https://github.com/Sylvenas/tailwindcss-animation-property).
 
 <div style="text-align:center" align="center">
-  <img src="https://p1.music.126.net/T4JA1NmZlSTZZZK4EgBncA==/109951164699178486.gif" />
+  <img src="https://d1.music.126.net/dmusic/obj/w5zCg8OAw6HDjzjDgMK_/13149450916/cc68/c878/81d3/09c049ad9865f0048b5420ee8f8d2370.gif />
 </div>
 
 ## Usage
