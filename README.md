@@ -163,10 +163,9 @@ The full list of animation titles is as follows：
 │   └── spaceOutUp
 ```
 
-## Q & A
+## FAQ
 
-- How do I remember so many animation names?  
-  Tailwinds-magic and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, so take it easy!
+- **How do I remember so many animation names:** Tailwinds-magic and [Tailwind Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) work well together, so take it easy!
 
 ## Contribute
 
