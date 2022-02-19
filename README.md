@@ -170,7 +170,7 @@ The full list of animation titles is as follows：
 
 ## Contribute
 
-Make your own magical animation and spread the joy! Ping me on [Twitter](https://twitter.com/TaoZhao_); I'd like to see what you've made ;).
+Make your own magical animation and create a Pull Request! I'd like to see what you've made ;)
 
 ### develop & test
 
