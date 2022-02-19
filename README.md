@@ -4,7 +4,7 @@ English | [简体中文](./README-zh_CN.md)
 
 A set of magical animation libraries for [tailwindcss](https://tailwindcss.com/), accessed using the [tailwindcss plugin](https://tailwindcss.com/docs/plugins).
 
-## Preview the example live on CodeSandbox: [Open in CodeSandbox](https://codesandbox.io/s/fancy-glade-3197y8?file=/pages/index.js)
+Preview the example live on CodeSandbox: [Open in CodeSandbox](https://codesandbox.io/s/fancy-glade-3197y8?file=/pages/index.js)
 
 > How to customize the animation properties？ Try [tailwindcss-animation-property](https://github.com/Sylvenas/tailwindcss-animation-property).
 
