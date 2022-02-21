@@ -84,75 +84,6 @@ import spaceOutLeft from "./space/spaceOutLeft";
 import spaceOutRight from "./space/spaceOutRight";
 import spaceOutUp from "./space/spaceOutUp";
 
-function addAnimationJIT(matchUtilities: Function) {
-  matchUtilities(
-    { "animate-delay": (value) => ({ animationDelay: value }) },
-    { values: delay }
-  );
-
-  matchUtilities(
-    { "animate-iteration": (value) => ({ animationIterationCount: value }) },
-    { values: repeat }
-  );
-
-  matchUtilities(
-    {
-      "animate-time": (value) => ({
-        animationTimingFunction: `cubic-bezier(${value})`,
-      }),
-    },
-    { values: ease }
-  );
-
-  matchUtilities(
-    {
-      "animate-duration": (value) => ({ animationDuration: value }),
-    },
-    { values: duration }
-  );
-
-  matchUtilities(
-    { "animate-fill": (value) => ({ animationFillMode: value }) },
-    { values: fill }
-  );
-
-  matchUtilities(
-    {
-      "animate-steps-start": (value) => ({
-        animationTimingFunction: `steps(${value},jump-start)`,
-      }),
-    },
-    { values: repeat }
-  );
-
-  matchUtilities(
-    {
-      "animate-steps-end": (value) => ({
-        animationTimingFunction: `steps(${value},jump-end)`,
-      }),
-    },
-    { values: repeat }
-  );
-
-  matchUtilities(
-    {
-      "animate-steps-both": (value) => ({
-        animationTimingFunction: `steps(${value},jump-both)`,
-      }),
-    },
-    { values: repeat }
-  );
-
-  matchUtilities(
-    {
-      "animate-steps-none": (value) => ({
-        animationTimingFunction: `steps(${value},jump-none)`,
-      }),
-    },
-    { values: repeat }
-  );
-}
-
 const magicAnimation = plugin(function ({
   addUtilities,
   matchUtilities,
@@ -544,8 +475,6 @@ const magicAnimation = plugin(function ({
     variants: ["hover"],
     respectImportant: false,
   });
-
-  addAnimationJIT(matchUtilities);
 });
 
 export default magicAnimation;

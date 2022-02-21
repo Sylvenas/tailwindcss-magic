@@ -26,57 +26,6 @@ createPlugin.withOptions = function (pluginFunction, configFunction = () => ({})
   return optionsFunction
 };
 
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-
-var expandArray = function (arr, append, inKey, transform) {
-    if (append === void 0) { append = ""; }
-    if (inKey === void 0) { inKey = false; }
-    if (transform === void 0) { transform = function (v) { return v; }; }
-    return arr.reduce(function (a, v) {
-        var _a;
-        return (__assign(__assign({}, a), (_a = {}, _a["" + v + (inKey ? append : "")] = "" + transform(v) + append, _a)));
-    }, {});
-};
-var range = function (a, b, c) {
-    var len = Math.abs(b != null ? Math.ceil((b - a) / (c !== null && c !== void 0 ? c : 1)) : a);
-    var arr = new Array(len).fill(0);
-    return arr.map(function (_, k) { return (k * (c !== null && c !== void 0 ? c : (a < 0 ? -1 : 1)) || 0) + (b != null ? a : 0); });
-};
-var duration = expandArray([100, 200, 300, 500, 1000], "ms");
-var delay = __assign({}, duration);
-var repeat = expandArray(range(5));
-var ease = {
-    linear: "0,0,1,1",
-    "in": ".42,0,1,1",
-    out: "0,0,.58,1",
-    "in-out": ".42,0,.58,1",
-};
-var fill = expandArray(["none", "forwards", "backwards", "both"]);
-
 /**
  * Composes a variable number of CSS helper functions.
  * Returns a function that accepts all the original arguments
@@ -1164,39 +1113,6 @@ var spaceOutUp = {
     },
 };
 
-function addAnimationJIT(matchUtilities) {
-    matchUtilities({ "animate-delay": function (value) { return ({ animationDelay: value }); } }, { values: delay });
-    matchUtilities({ "animate-iteration": function (value) { return ({ animationIterationCount: value }); } }, { values: repeat });
-    matchUtilities({
-        "animate-time": function (value) { return ({
-            animationTimingFunction: "cubic-bezier(" + value + ")",
-        }); },
-    }, { values: ease });
-    matchUtilities({
-        "animate-duration": function (value) { return ({ animationDuration: value }); },
-    }, { values: duration });
-    matchUtilities({ "animate-fill": function (value) { return ({ animationFillMode: value }); } }, { values: fill });
-    matchUtilities({
-        "animate-steps-start": function (value) { return ({
-            animationTimingFunction: "steps(" + value + ",jump-start)",
-        }); },
-    }, { values: repeat });
-    matchUtilities({
-        "animate-steps-end": function (value) { return ({
-            animationTimingFunction: "steps(" + value + ",jump-end)",
-        }); },
-    }, { values: repeat });
-    matchUtilities({
-        "animate-steps-both": function (value) { return ({
-            animationTimingFunction: "steps(" + value + ",jump-both)",
-        }); },
-    }, { values: repeat });
-    matchUtilities({
-        "animate-steps-none": function (value) { return ({
-            animationTimingFunction: "steps(" + value + ",jump-none)",
-        }); },
-    }, { values: repeat });
-}
 var magicAnimation = createPlugin(function (_a) {
     var addUtilities = _a.addUtilities, matchUtilities = _a.matchUtilities, theme = _a.theme;
     var fallbackKeyframes = {
@@ -1560,7 +1476,6 @@ var magicAnimation = createPlugin(function (_a) {
         variants: ["hover"],
         respectImportant: false,
     });
-    addAnimationJIT(matchUtilities);
 });
 
 module.exports = magicAnimation;

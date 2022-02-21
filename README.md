@@ -171,16 +171,23 @@ The full list of animation titles is as follows：
 
 Make your own magical animation and create a Pull Request! I'd like to see what you've made ;)
 
-### develop & test
+## Run
 
-- 📦 package
+- Locally example
+
+```
+cd example
+yarn dev
+```
+
+- 📦 Package
 
 ```
 yarn
 yarn build
 ```
 
-- unit test
+- Unit test
 
 ```
 npm run test
