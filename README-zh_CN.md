@@ -55,7 +55,7 @@ module.exports = {
 
 ## 动画名称
 
-所有的动画名称均以 `magic` 开头，然后下划线之后是“真正的”动画名称(`magic-puffIn`, `magic-openDownLeft`...)，全部的动画名称列表如下：
+所有的动画名称均以 `magic` 开头，动画名称使用短横线连接，短横线之后是“真正的”动画名称(`magic-puffIn`, `magic-openDownLeft`...)，全部的动画名称列表如下：
 
 ```
 .
